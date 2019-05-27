@@ -5,6 +5,37 @@ Una mayor descripción del proyecto se puede encontrar [aquí](https://docs.goog
 
 Un video describiendo el uso de la herramienta también se puede encontrar [aquí](https://youtu.be/stqd0bu2I4w).
 
+## Modo de uso
+
+Una vez se ha instalado adecuadamente se debe ejecutar el commando `uploadcommand`. 
+
+### Sin argumentos
+
+Subirá el último comando que se digitó en la terminal.
+
+```
+uploadcommand
+```
+
+### Argumento númerico
+
+Subirá los últimos `n` comandos digitados.
+
+```
+uploadcommand 4
+```
+
+Entonces subirá los últimos n comandos digitados por el usuario en la terminal.
+
+### Cadena de caracteres
+
+Se subirá la cadena de caracteres pasada como argumento.
+
+```
+uploadcommand "echo 'hola mundo'"
+```
+
+Subirá el comando `echo 'hola mundo'`.
 ---
 
 El [Dockerfile](Dockerfile) provisto permite la creación del contenedor que se usa en el aplicativo. 
