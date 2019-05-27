@@ -10,7 +10,7 @@ uploadLastCommand() {
 CURRENTDIR=$(pwd)
 cd ${HOME}/bin
 if [ ! "${1}" == "" ]; then
-# No se digito una cada vacia
+# Se paso un argumento
   re='^[0-9]+$'
   if  [[ ${1} =~ ${re} ]]; then
   # Es un valor numerico. Se desea enviar los ultimos comandos
