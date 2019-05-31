@@ -94,14 +94,10 @@ def incrementarCol(f):
   modificarCol(f,x)
 
 def inicializarFila(f,val = 1):
-  with open(f,"w") as json_file:
-    data['row'] = val
-    json.dump(data,json_file)
+  modificarFila(f,val)
 
 def inicializarColumna(f,val = 1):
-  with open(f,"w") as json_file:
-    data['col'] = val
-    json.dump(data,json_file)
+  modificarCol(f,val)
 
 def inicializarKey(f,val = "<digite su key>"):
   with open(f,"w") as json_file:

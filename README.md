@@ -37,6 +37,14 @@ uploadcommand "echo 'hola mundo'"
 
 Subirá el comando `echo 'hola mundo'`.
 
+### Limpiar datos de la hoja de cálculo
+
+Para limpiar la información en la hoja de cálculo y volver a llenarla digitar
+
+```
+uc 0
+```
+
 ---
 
 El [Dockerfile](Dockerfile) provisto permite la creación del contenedor que se usa en el aplicativo. 
